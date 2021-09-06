@@ -138,12 +138,12 @@ nav a:after
 
 nav a:nth-child(1):before
 {
-    background-color: yellow;
+    background-color: #ededed;
 }
 
 nav a:nth-child(1):after
 {
-    background-color: red;
+    background-color: crimson;
 }
 
 nav a:nth-child(2):before

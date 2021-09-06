@@ -10,7 +10,19 @@ mail = Mail(app) # instantiate the mail class
 
 
 app = Flask(__name__) 
-english_bot = ChatBot("Chatterbot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
+# english_bot = ChatBot("Chatterbot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
+# Create a new instance of a ChatBot
+english_bot = ChatBot(
+    "Chatterbot",
+    storage_adapter='chatterbot.storage.SQLStorageAdapter',
+    logic_adapters=[
+        {
+            'import_path': 'chatterbot.logic.BestMatch',
+            'default_response': 'I am sorry, but I do not understand.',
+            'maximum_similarity_threshold': 0.50
+        }
+    ]
+)
 trainer = ChatterBotCorpusTrainer(english_bot)
 trainer.train("chatterbot.corpus.english")
 trainer.train("data/convo-data.yml")
@@ -58,6 +70,10 @@ def events():
 @app.route('/team')
 def team():
 	return render_template('team.html')
+
+@app.route('/articles')
+def articles():
+	return render_template('article.html')
 
 	
 
