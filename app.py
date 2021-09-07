@@ -9,7 +9,7 @@ mail = Mail(app) # instantiate the mail class
 
 
 
-app = Flask(__name__) 
+app = Flask(__name__)
 # english_bot = ChatBot("Chatterbot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
 # Create a new instance of a ChatBot
 english_bot = ChatBot(
@@ -23,7 +23,7 @@ english_bot = ChatBot(
         }
     ]
 )
-trainer = ChatterBotCorpusTrainer(english_bot)
+trainer = ChatterBotCorpusTrainer(english_bot, show_training_progress=False)
 trainer.train("chatterbot.corpus.english")
 trainer.train("data/convo-data.yml")
 
@@ -73,9 +73,9 @@ def team():
 
 @app.route('/articles')
 def articles():
-	return render_template('article.html')
+	return render_template('articles.html')
 
-	
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
