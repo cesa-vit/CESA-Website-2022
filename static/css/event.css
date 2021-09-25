@@ -283,9 +283,10 @@ nav a:nth-child(3):hover ~ #indicator
 
 .card__header {
   position: relative;
-  display: flex;
+  display: block;
   align-items: center;
   padding: 2em;
+  width: fit-content;
   border-radius: calc(var(--curve) * 1px) 0 0 0; 
   -webkit-border-radius: calc(var(--curve) * 1px) 0 0 0;    
   -moz-border-radius: calc(var(--curve) * 1px) 0 0 0;    
