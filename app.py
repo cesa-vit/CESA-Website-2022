@@ -88,5 +88,7 @@ def article_3():
 	return render_template('article__3.html')
 
 
+
+
 if __name__ == '__main__':
 	app.run(debug=True)
