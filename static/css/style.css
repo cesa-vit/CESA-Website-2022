@@ -1102,6 +1102,9 @@ footer span a:hover{
 }
 /* End Social Media Icons */
 /* ChatBot */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
 #chat-bot {
   position: fixed;
   bottom: 20px;
@@ -1229,8 +1232,8 @@ footer span a:hover{
   margin-bottom: 10px;
   }
   .botText {
-    background-color: #64686e;
-    color: #fff;
+    background-color: #ededed;
+    color: #000;
     border-radius: 10px;
     padding: 20px;
   }
@@ -1241,8 +1244,8 @@ footer span a:hover{
       /* margin: 8px 0; */
       box-sizing: border-box;
       border: none;
-      background-color: #ededed;
-      color: #000;
+      background-color: #64686e;
+      color: #fff;
     }
   #buttonInput{
       top: 120px;
