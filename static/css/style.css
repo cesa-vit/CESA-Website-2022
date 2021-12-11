@@ -1240,7 +1240,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   input[type=text] {
       padding-top: 7px;
       padding-bottom: 9px;
-      padding-left: 12px;
+      padding-left: 2px;
+      width: 75%;
       /* margin: 8px 0; */
       box-sizing: border-box;
       border: none;

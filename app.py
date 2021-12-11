@@ -86,6 +86,12 @@ def article_2():
 @app.route('/article_3')
 def article_3():
 	return render_template('article__3.html')
+@app.route('/article_4')
+def article_4():
+	return render_template('article__4.html')
+@app.route('/article_5')
+def article_5():
+	return render_template('article__5.html')
 
 
 
