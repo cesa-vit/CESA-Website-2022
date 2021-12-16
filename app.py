@@ -92,6 +92,9 @@ def article_4():
 @app.route('/article_5')
 def article_5():
 	return render_template('article__5.html')
+@app.route('/article_6')
+def article_6():
+	return render_template('article__6.html')
 
 
 
