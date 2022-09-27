@@ -31,9 +31,10 @@ section{
     padding: 100px 0;
 }
 .max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto
+    
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -153,6 +154,7 @@ section .title::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .navbar .logo a{
     color: #fff;
