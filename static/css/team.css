@@ -41,9 +41,9 @@ html{
     background: crimson;
 }
 .navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navbar .logo a{
     color: #fff;
@@ -425,7 +425,7 @@ footer{
     footer .box_2{
     width: 300px;
     margin: 10px;
-    padding: 10px;
+    padding: 1px;
     }
     footer .box_3{
     width: 200px;
