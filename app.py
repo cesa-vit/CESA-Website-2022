@@ -1,8 +1,8 @@
 # importing libraries
 from flask import Flask,redirect,url_for,request,render_template,session
 from flask_mail import Mail, Message
-from chatterbot import ChatBot
-from chatterbot.trainers import ChatterBotCorpusTrainer
+# from chatterbot import ChatBot
+# from chatterbot.trainers import ChatterBotCorpusTrainer
 # from Flask-Ext import Mail
 app = Flask(__name__)
 mail = Mail(app) # instantiate the mail class
@@ -12,20 +12,20 @@ mail = Mail(app) # instantiate the mail class
 app = Flask(__name__)
 # english_bot = ChatBot("Chatterbot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
 # Create a new instance of a ChatBot
-english_bot = ChatBot(
-    "Chatterbot",
-    storage_adapter='chatterbot.storage.SQLStorageAdapter',
-    logic_adapters=[
-        {
-            'import_path': 'chatterbot.logic.BestMatch',
-            'default_response': 'I am sorry, but I do not understand.',
-            'maximum_similarity_threshold': 0.50
-        }
-    ]
-)
-trainer = ChatterBotCorpusTrainer(english_bot, show_training_progress=False)
-trainer.train("chatterbot.corpus.english")
-trainer.train("data/convo-data.yml")
+# english_bot = ChatBot(
+#     "Chatterbot",
+#     storage_adapter='chatterbot.storage.SQLStorageAdapter',
+#     logic_adapters=[
+#         {
+#             'import_path': 'chatterbot.logic.BestMatch',
+#             'default_response': 'I am sorry, but I do not understand.',
+#             'maximum_similarity_threshold': 0.50
+#         }
+#     ]
+# )
+# trainer = ChatterBotCorpusTrainer(english_bot, show_training_progress=False)
+# trainer.train("chatterbot.corpus.english")
+# trainer.train("data/convo-data.yml")
 
 
 # configuration of mail
@@ -58,10 +58,10 @@ def index():
         return render_template('index.html')
     return render_template('index.html')
 
-@app.route("/get")
-def get_bot_response():
-     userText = request.args.get("msg") #get data from input,we write js  to index.html
-     return str(english_bot.get_response(userText))
+# @app.route("/get")
+# def get_bot_response():
+#      userText = request.args.get("msg") #get data from input,we write js  to index.html
+#      return str(english_bot.get_response(userText))
 
 @app.route('/events')
 def events():
