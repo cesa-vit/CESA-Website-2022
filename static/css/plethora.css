@@ -362,7 +362,7 @@ footer{
 
 .container{
   width: 0;
-  margin: 3% auto;
+  margin: 15% auto;
   font-family: "Poppins", sans-serif;
 }
 
@@ -495,6 +495,49 @@ padding: 0;
   
 }
 @media only screen and (max-width: 992px) {
+
+    .navbar{
+        width: 100%;
+    }
+    .navbar .max-width{
+        align-items: left;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    /* Used to remove horizontal Scrollbar */
+      html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
   #box1,#box2,#box3,#box4{
     display: block;
   }
@@ -528,6 +571,48 @@ padding: 0;
   
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .navbar{
+        width: 100%;
+    }
+    .navbar .max-width{
+        align-items: left;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    /* Used to remove horizontal Scrollbar */
+      html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      } 
   .grid {
     display: flex;
     flex-direction: column;
@@ -558,6 +643,48 @@ padding: 0;
 }
 
 @media only screen and (max-device-width: 480px) {
+    .navbar{
+        width: 100%;
+    }
+    .navbar .max-width{
+        align-items: left;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    /* Used to remove horizontal Scrollbar */
+      html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
   .grid {
     display: flex;
     flex-direction: column;
