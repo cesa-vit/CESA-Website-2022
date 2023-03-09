@@ -75,6 +75,10 @@ def team():
 def articles():
 	return render_template('articlespage.html')
 
+@app.route('/plethora')
+def articles():
+	return render_template('plethora.html')
+
 
 @app.route('/article_1')
 def article_1():
