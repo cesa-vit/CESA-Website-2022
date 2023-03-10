@@ -42,7 +42,6 @@
             <div class="logo">
               <a href="#">
                 <img src="../static/images/cesa final logo/final logo/white72dpi.png" style="height: 45px;">
-                <!-- <span>CESA</span> -->
               </a>
             </div>
             <ul class="menu">
@@ -63,32 +62,6 @@
             </div>
         </div>
     </nav> 
-
-    <!-- <header>
-        <nav>
-          <a href="#" id="logo">
-            <img src="../static/images/cesa final logo/final logo/white72dpi.png" style="height: 45px;" alt="">
-          </a>
-          <i class="fas fa-bars" id="ham-menu"></i>
-          <ul id="nav-bar">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/team">About</a>
-            </li>
-            <li>
-              <a href="/events">Services</a>
-            </li>
-            <li>
-              <a href="/articles">Team</a>
-            </li>
-            <li>
-              <a href="plethora.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header> -->
 
     <div class="container">
 
@@ -113,7 +86,7 @@
                 <div class="card" id="box2">
                     <img class="card-img" src="/static/images/plethora/nolight.jpg" alt="">
                     <div class="card-content">
-                        <h1 class="card-header">!light</h1>
+                        <h1 class="card-header">!Light</h1>
                         <p class="card-text" id="text2">This is a front-end coding competition using the web languages HTML and
                             CSS. All
                             participants will be given the same screenshot of a website (e.g. Pinterest.com) and they
@@ -362,19 +335,19 @@
 </body>
 <script>
 
-let hamMenuIcon = document.getElementById("ham-menu");
-let navBar = document.getElementById("nav-bar");
-let navLinks = navBar.querySelectorAll("li");
-hamMenuIcon.addEventListener("click", () => {
-  navBar.classList.toggle("active");
-  hamMenuIcon.classList.toggle("fa-times");
-});
-navLinks.forEach((navLinks) => {
-  navLinks.addEventListener("click", () => {
-    navBar.classList.remove("active");
-    hamMenuIcon.classList.toggle("fa-times");
-  });
-});
+// let hamMenuIcon = document.getElementById("ham-menu");
+// let navBar = document.getElementById("nav-bar");
+// let navLinks = navBar.querySelectorAll("li");
+// hamMenuIcon.addEventListener("click", () => {
+//   navBar.classList.toggle("active");
+//   hamMenuIcon.classList.toggle("fa-times");
+// });
+// navLinks.forEach((navLinks) => {
+//   navLinks.addEventListener("click", () => {
+//     navBar.classList.remove("active");
+//     hamMenuIcon.classList.toggle("fa-times");
+//   });
+// });
 
     $(document).ready(function () {
         $(window).scroll(function () {
@@ -423,5 +396,4 @@ navLinks.forEach((navLinks) => {
 <script type="text/javascript"
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </script>
-
 </html>

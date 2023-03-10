@@ -712,4 +712,7 @@ padding: 0;
     height: 32rem;
     object-fit:fill;
   }
+  /* .card-header{
+    font-size:small !important;
+  } */
 }
